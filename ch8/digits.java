@@ -8,12 +8,13 @@
  */
 public class digits
 {
-    /**
-     * Default constructor for objects of class digits
-     */
-    public digits()
-    {
-        // initialise instance variables
-        x = 0;
+    private int digits = 0;
+    public int divide(int num){
+        num = num / 10;
+        if ( num >= 1 ){
+            digits += 1;
+            divide(num);
+        }
+        return digits+1;
     }
 }

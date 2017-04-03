@@ -10,14 +10,14 @@ public class palindrome
     //private String word = "";
     public boolean isPal(String word)
     {
-        word = word.replace(" ", "");
+        //String word = word1.replace(" ", "");
         if(word.length() > 1){
             if ( word.charAt(0) != word.charAt(word.length()-1) ){
                 palindrome = false;
             }else if( word.charAt(0) == word.charAt(word.length()-1) ){
                 isPal( word.substring(1 ,word.length()-1) );
             }
-            System.out.println(word);
+            //System.out.println(word);
         }else{
             palindrome = true;
         }
