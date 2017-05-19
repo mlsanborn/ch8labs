@@ -8,9 +8,12 @@
  */
 public class gcdclient
 {
+    
     public static void main(String[] args)
     {
-        gcd test = new gcd(12,4);
-        System.out.print(test.getGCD(1));
+        gcd test = new gcd();
+        System.out.println(test.getgcd(4,12));
+        System.out.println(test.getgcd(9,6));
+        System.out.println(test.getgcd(5,2));
     }
 }
